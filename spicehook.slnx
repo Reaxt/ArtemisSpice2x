@@ -1,3 +1,5 @@
 <Solution>
-  <Project Path="Artermis.Modules.Spice2xHook/Artermis.Modules.Spice2xHook.csproj" />
+  <Project Path="Artermis.Modules.Spice2xHook/Artermis.Modules.Spice2xHook.csproj">
+    <Deploy Solution="Release|*" />
+  </Project>
 </Solution>
