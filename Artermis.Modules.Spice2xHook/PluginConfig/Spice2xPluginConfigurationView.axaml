@@ -1,0 +1,61 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:Artermis.Modules.Spice2xHook.PluginConfig"
+             xmlns:shared="clr-namespace:Artemis.UI.Shared;assembly=Artemis.UI.Shared"
+             
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:DataType="local:Spice2xPluginConfigurationViewModel"
+             x:Class="Artermis.Modules.Spice2xHook.PluginConfig.Spice2xPluginConfigurationView">
+    <Border Classes="card" Margin="10">
+        <StackPanel>
+            <Grid RowDefinitions="*,*" ColumnDefinitions="*,Auto">
+                <StackPanel Grid.Column="0">
+                    <TextBlock>
+                        Spice API Port
+                    </TextBlock>
+                </StackPanel>
+                <StackPanel Grid.Row="0" Grid.Column="1" VerticalAlignment="Center">
+                    <TextBox 
+                        IsEnabled="True"
+                        Text="{CompiledBinding SpiceAPIPort.Value}"
+                        Watermark="1337"
+                        Width="250"
+                    />
+                </StackPanel>
+            </Grid>
+            <Grid RowDefinitions="*,*" ColumnDefinitions="*,Auto">
+                <StackPanel Grid.Column="0">
+                    <TextBlock>
+                        Spice API URL
+                    </TextBlock>
+                </StackPanel>
+                <StackPanel Grid.Row="0" Grid.Column="1" VerticalAlignment="Center">
+                    <TextBox 
+                        IsEnabled="True"
+                        Text="{CompiledBinding SpiceAPIUrl.Value}"
+                        Watermark="http://127.0.0.1"
+                        Width="250"
+                    />
+                </StackPanel>
+            </Grid>
+            <Grid RowDefinitions="*,*" ColumnDefinitions="*,Auto">
+                <StackPanel Grid.Column="0">
+                    <TextBlock>
+                        Spice API Password
+                    </TextBlock>
+                </StackPanel>
+                <StackPanel Grid.Row="0" Grid.Column="1" VerticalAlignment="Center">
+                    <TextBox 
+                        IsEnabled="True"
+                        Text="{CompiledBinding SpiceAPIPassword.Value}"
+                        Watermark="optional"
+                        Width="250"
+                    />
+                </StackPanel>
+            </Grid>
+            
+        </StackPanel>
+    </Border>
+</UserControl>
