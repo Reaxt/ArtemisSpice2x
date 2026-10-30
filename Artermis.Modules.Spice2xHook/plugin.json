@@ -4,7 +4,7 @@
     "Description": "A plugin that provides HID Light data from Spice2x. Made with IIDX in mind, but should work with anything. It may be tweaked to provide more functionality in the future!",
     "Author": "Reaxt",
     "Website": "",
-    "Repository": "https://github.com/Reaxt/AremisSpice2x",
+    "Repository": "https://github.com/Reaxt/ArtemisSpice2x",
     "Icon": "QuestionMark",
     "Version": "1.0.0.0",
     "Main": "Artermis.Modules.Spice2xHook.dll",
